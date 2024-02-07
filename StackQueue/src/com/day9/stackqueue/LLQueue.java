@@ -26,9 +26,22 @@ public class LLQueue {
         size++;
     }
 
-
+    public void dequeue(){
+        Node temp = front;
+        if(front == null){
+            System.out.println("queue is empty");
+        }
+        else{
+            System.out.println(temp.data +" is removed from the queue");
+            front = front.next;
+            size--;
+        }
+    }
     public void displayQueue(){
         Node current = front;
+        if(front == null){
+            System.out.println("Queue is empty");
+        }
         while(current != null){
             System.out.print(current.data + "->");
             current = current.next;

@@ -32,6 +32,7 @@ public class LLStack {
 
     public void displayStack(){
         Node current = top;
+
         while(current != null){
             System.out.print(current.data + "->");
             current = current.next;
