@@ -6,6 +6,14 @@ public class Main {
         stack.add(70);
         stack.add(30);
         stack.add(56);
+        System.out.println("The Top element is : "+ stack.peak());
+        System.out.println(stack.pop() + " is popped out.");
+        System.out.println("The Top element is : "+ stack.peak());
+        System.out.println(stack.pop()+ " is popped out.");
+        System.out.println("The Top element is : "+ stack.peak());
+        System.out.println(stack.pop()+ " is popped out");
+        System.out.println("The Top element is : "+ stack.peak());
+        System.out.println(stack.pop());
         stack.displayStack();
     }
 }
